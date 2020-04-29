@@ -13,7 +13,7 @@ class ReLU6(Layer):
 
 
 class HardSigmoid(Layer):
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__()
         self.relu6 = ReLU6()
 
@@ -22,7 +22,7 @@ class HardSigmoid(Layer):
 
 
 class HardSwish(Layer):
-    def __init__(self):
+    def __init__(self, **kwargs):
         super().__init__()
         self.hard_sigmoid = HardSigmoid()
 
